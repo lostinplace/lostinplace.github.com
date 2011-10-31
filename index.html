@@ -3,14 +3,68 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Lost in place</title>
+    <style type="text/css">
+        
+        html {
+           min-height: 100%;
+           font-family:Verdana;
+        }
+        .BackGradient 
+        {
+            /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhjM2M4YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iIzhjNWU4YyIgc3RvcC1vcGFjaXR5PSIwLjY4Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4YzgwOGMiIHN0b3Atb3BhY2l0eT0iMC40Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+            background: -moz-linear-gradient(top, rgba(140,60,140,1) 0%, rgba(140,94,140,0.68) 53%, rgba(140,128,140,0.4) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(140,60,140,1)), color-stop(53%,rgba(140,94,140,0.68)), color-stop(100%,rgba(140,128,140,0.4))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, rgba(140,60,140,1) 0%,rgba(140,94,140,0.68) 53%,rgba(140,128,140,0.4) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, rgba(140,60,140,1) 0%,rgba(140,94,140,0.68) 53%,rgba(140,128,140,0.4) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, rgba(140,60,140,1) 0%,rgba(140,94,140,0.68) 53%,rgba(140,128,140,0.4) 100%); /* IE10+ */
+            background: linear-gradient(top, rgba(140,60,140,1) 0%,rgba(140,94,140,0.68) 53%,rgba(140,128,140,0.4) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c3c8c', endColorstr='#668c808c',GradientType=0 ); /* IE6-8 */
+        }
+        #navList
+        {
+            list-style-type:none; 
+            font-weight:bold
+        }
+        #navList li
+        {
+            margin:10px;
+        }
+        
+        #navList li:hover
+        {
+            margin:10px;
+            font-size:115%;
+            cursor:pointer;
+        }
+    </style>
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
 </head>
-
-<body>
-    <span>lost yet?</span>
-    <select name="knowledge">
-    	<option value="1">Yes</option>
-    	<option value="0">No</option>
-    </select>
+<body class="BackGradient gradient">
+    <div id="headerDiv" style="width:100%">
+        <img src="wizardrose.png" style="height:200px" />
+    </div>
+    <div style="width:300px; float:left;">
+        <ul id="navList">
+            <li>Code</li>
+            <li>Mind Doodles</li>
+        </ul>
+    </div>
+    <div style="height:100%; float:left;" >
+        <div style="background-color:white; width:400px; padding:15px;">
+            <span >lost yet?</span>
+            <select name="knowledge" onchange="window.location.href=window.location.href">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+    </div>
+    
 </body>
-
 </html>
